@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cargas Masivas</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Portal - Bootstrap 5 Admin Dashboard Template For Developers"
+    />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="hospital.ico" />
+    <script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
+    <link id="theme-style" rel="stylesheet" href="assets/css/portal.css" />
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+  </head>
+
+  <body class="app">
+    <header class="app-header fixed-top">	   	            
+      <div class="app-header-inner">  
+        <div class="container-fluid py-2">
+          <div class="app-header-content"> 
+              <div class="row justify-content-between align-items-center">							
+            </div>				        
+              </div>
+                
+      <div id="app-sidepanel" class="app-sidepanel"> 
+        <div id="sidepanel-drop" class="sidepanel-drop"></div>
+        <div class="sidepanel-inner d-flex flex-column">
+          <a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">&times;</a>
+          <div class="app-branding">
+              <a class="app-logo" href="Principal2.html"><img class="logo-icon mr-2" src="assets/images/app-logo.svg" alt="logo"><span class="logo-text">Doctores</span></a>
+
+          </div>
+          
+        <nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
+          <ul class="app-menu list-unstyled accordion" id="menu-accordion">
+            <li class="nav-item">
+                <a class="nav-link" href="Doctores.html">
+                  <span class="nav-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
+<path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
+</svg>
+                   </span>
+                           <span class="nav-link-text">Doctores</span>
+                </a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link" href="TablaDoc.html">
+                  <span class="nav-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+<path fill-rule="evenodd" d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/>
+<circle cx="3.5" cy="5.5" r=".5"/>
+<circle cx="3.5" cy="8" r=".5"/>
+<circle cx="3.5" cy="10.5" r=".5"/>
+</svg>
+                   </span>
+                           <span class="nav-link-text">Tabla doctores</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Pacientes.html">
+                  <span class="nav-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
+<path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
+</svg>
+                   </span>
+                           <span class="nav-link-text">Pacientes</span>
+                </a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link" href="TablaPacientes.html">
+                  <span class="nav-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+<path fill-rule="evenodd" d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/>
+<circle cx="3.5" cy="5.5" r=".5"/>
+<circle cx="3.5" cy="8" r=".5"/>
+<circle cx="3.5" cy="10.5" r=".5"/>
+</svg>
+                   </span>
+                           <span class="nav-link-text">Tabla pacientes</span>
+                </a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link" href="Enfermeros.html">
+                  <span class="nav-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
+<path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
+</svg>
+                   </span>
+                           <span class="nav-link-text">Enfermeros</span>
+                </a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link" href="TablaEnfermeros.html">
+                  <span class="nav-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+<path fill-rule="evenodd" d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/>
+<circle cx="3.5" cy="5.5" r=".5"/>
+<circle cx="3.5" cy="8" r=".5"/>
+<circle cx="3.5" cy="10.5" r=".5"/>
+</svg>
+                   </span>
+                           <span class="nav-link-text">Tabla enfermeros</span>
+                </a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link" href="Medicamentos.html">
+                  <span class="nav-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
+<path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
+</svg>
+                   </span>
+                           <span class="nav-link-text">Medicamentos</span>
+                </a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link" href="TablaMedicamentos.html">
+                  <span class="nav-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+<path fill-rule="evenodd" d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/>
+<circle cx="3.5" cy="5.5" r=".5"/>
+<circle cx="3.5" cy="8" r=".5"/>
+<circle cx="3.5" cy="10.5" r=".5"/>
+</svg>
+                   </span>
+                           <span class="nav-link-text">Tabla medicamentos</span>
+                </a>
+            </li>
+          
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+    <div class="app-wrapper">
+      <div class="app-content pt-3 p-md-3 p-lg-4">
+        <div class="container-xl">
+          <h1 class="app-page-title">Cargas Masivas</h1>
+          <hr class="mb-4" />
+          <div class="row g-4 settings-section">
+            <div class="col-12 col-md-4">
+              <h3 class="section-title">Doctores</h3>
+
+              <div class="section-intro">
+                Cargar doctores
+              </div>
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="app-card app-card-settings shadow-sm p-4">
+                <div class="app-card-body">
+                  <form class="settings-form">
+                    <div class="mb-3">
+                      <label for="setting-input-1" class="form-label"
+                        >Archivo csv<span
+                          class="ml-2"
+                          data-container="body"
+                          data-toggle="popover"
+                          data-trigger="hover"
+                          data-placement="top"
+                          data-content="Archivo separado por comas."
+                          ><svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-info-circle"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                            />
+                            <path
+                              d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"
+                            />
+                            <circle cx="8" cy="4.5" r="1" /></svg></span
+                      ></label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="input-file"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="setting-input-2" class="form-label"
+                        >Resultado</label
+                      >
+                      <textarea
+                        type="text"
+                        class="form-control"
+                        id="textarea-res"
+                        rows="6"
+                        disabled
+                      ></textarea>
+                    </div>
+                    <button
+                      type="button"
+                      onclick="cargaMasiva()"
+                      class="btn app-btn-primary"
+                    >
+                      Cargar
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+        </div>
+      </div>
+
+      <footer class="app-footer">
+        <div class="container text-center py-3">
+
+        </div>
+      </footer>
+    </div>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="./funciones/cargamasiva.js"></script>
+  </body>
+</html>

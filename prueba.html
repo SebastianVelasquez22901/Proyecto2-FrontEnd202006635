@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            suma
+        </title>
+    <body>
+        Numero1: <input type="text" id="n1"><br>
+        Numero2: <input type="text" id="n2"><br><br>
+        respuesta: <input type="text" id="res"><br>
+        <input type="button" value="SUMA" onclick="suma()">
+    <script type="text/javascript"> 
+        function suma(){
+            var num1 = Number(document.getElementById('n1').value);
+            var num2 = Number(document.getElementById('n2').value);
+            var res=num1+num2;
+            document.getElementById('res').value=res;
+        }
+    </script>
+    </body>
+    </head>
+</html>
